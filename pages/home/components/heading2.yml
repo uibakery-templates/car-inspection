@@ -1,0 +1,30 @@
+id: '16944431814980.0008410062827677312'
+definitionId: heading
+parentSlotId: '2'
+styles:
+  xl:
+    gridItem:
+      x: 16
+      y: 5
+      w: 8
+      h: 8
+    fontSize:
+      customValue: 18
+      customUnit: px
+  xs:
+    gridItem:
+      x: 0
+      y: 674
+      w: 24
+      h: 10
+properties:
+  name: heading2
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  type: h5
+  text: 'Inspection for #{{ui.carsTable.selectedRow.data.vin}}'
+  alignment: right
+actions: {}
+index: 5
+slots: []

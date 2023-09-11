@@ -1,0 +1,56 @@
+id: '16944401234730.6790229615834311'
+name: loadInterior
+nameConfigured: true
+steps:
+  - id: '16944401264430.20926618032083089'
+    type: customAsyncCode
+    name: code
+    params:
+      - type: asyncCode
+        value: |-
+          return [
+            { part: 'Seats', isWorking: true },
+            { part: 'Dashboard', isWorking: true },
+            { part: 'Floor Mats', isWorking: true },
+            { part: 'Windows', isWorking: true },
+            { part: 'Rearview Mirror', isWorking: true },
+            { part: 'Steering Wheel', isWorking: true },
+            { part: 'Gear Shift', isWorking: true },
+            { part: 'Cup Holders', isWorking: true },
+            { part: 'Air Vents', isWorking: true },
+            { part: 'Radio', isWorking: true },
+            { part: 'Glove Box', isWorking: true },
+            { part: 'Door Handles', isWorking: true },
+            { part: 'Sun Visors', isWorking: true },
+            { part: 'Seat Belts', isWorking: true },
+            { part: 'Center Console', isWorking: true },
+          ];
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+singleStep: false
+mode: manual
+modeConfigured: false
+parentPageId: '1'
+folder: false
+parentId: null
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.loadInterior.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.loadInterior.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.loadInterior.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+assigned: false
+selected: true
+configured: true
+index: 7

@@ -1,0 +1,36 @@
+id: '16944405502710.03155048541590655'
+definitionId: button
+parentSlotId: '16944368647730.07124611622681098'
+styles:
+  xl:
+    gridItem:
+      x: 18
+      y: 93
+      w: 6
+      h: 10
+    iconPlacement: left
+  xs:
+    gridItem:
+      x: 0
+      y: 71
+      w: 24
+      h: 10
+properties:
+  name: button3
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  text: Submit report
+  icon:
+    value: plus
+    dataValue: star-outline
+    withData: false
+actions:
+  buttonClick:
+    - action: '16944427943090.6623945135281242'
+      paramCode: ''
+      blockPageLoad: false
+      index: 0
+  init: []
+index: 1
+slots: []

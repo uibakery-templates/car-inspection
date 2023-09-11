@@ -24,6 +24,9 @@ slots:
             name: content
             bindings: {}
             children:
-              - components/publicCarsTable.yml
+              - components/carsTable.yml
               - components/card/card.yml
               - components/stepper/stepper.yml
+              - components/heading.yml
+              - components/historyTable.yml
+              - components/heading2.yml

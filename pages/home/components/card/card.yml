@@ -5,8 +5,8 @@ styles:
   xl:
     gridItem:
       x: 0
-      y: 10
-      w: 12
+      y: 13
+      w: 9
       h: 17
   xs:
     gridItem:
@@ -21,7 +21,7 @@ properties:
     - xs
   showHeader: false
 actions: {}
-index: 5
+index: 8
 slots:
   - id: '16944334591530.3166343885364029'
     name: header

@@ -1,0 +1,134 @@
+id: '16944430792300.1386813711907322'
+definitionId: smartTable
+parentSlotId: '2'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 161
+      w: 24
+      h: 90
+  xs:
+    gridItem:
+      x: 0
+      y: 594
+      w: 24
+      h: 80
+properties:
+  dynamicColumns:
+    value: []
+    dataValue: |-
+      [
+        { prop: 'id', type: 'number', primaryKey: true },
+       'full_name',
+        { prop: 'avatar', type: 'image' },
+        { prop: 'email', type: 'link' },
+      ]
+    withData: false
+  data: '{{actions.loadHistory.data}}'
+  name: historyTable
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  title: Inspections history
+  showLoading:
+    withData: true
+    dataValue: '{{actions.loadHistory.loading}}'
+    value: false
+actions: {}
+index: 4
+slots:
+  - id: '16944430792300.45914887328777354'
+    name: columns
+    children:
+      - id: '16944430792520.19946613132980273'
+        definitionId: atomicDateTime
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicDateTime
+          prop: date
+          primaryKey: false
+          timeFormat:
+            value: ''
+            dataValue: HH:mm
+            withData: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          filter: true
+        parentSlotId: '16944430792300.45914887328777354'
+        index: 0
+        slots: []
+      - id: '16944430792520.1246290400140484'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString6
+          prop: carVin
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          filter: true
+        parentSlotId: '16944430792300.45914887328777354'
+        index: 1
+        slots: []
+      - id: '16944430792520.29344492028875435'
+        definitionId: atomicString
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString7
+          prop: carMake
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          filter: true
+        parentSlotId: '16944430792300.45914887328777354'
+        index: 2
+        slots: []
+      - id: '16944430792520.15378289839826254'
+        definitionId: atomicPercent
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicPercent
+          prop: inspectionScore
+          primaryKey: false
+          view: progress
+          displayValue: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          filter: true
+        parentSlotId: '16944430792300.45914887328777354'
+        index: 3
+        slots: []
+      - id: '16944430792520.04361741590367374'
+        definitionId: atomicCurrency
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicCurrency
+          prop: repairCostEstimate
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          filter: true
+        parentSlotId: '16944430792300.45914887328777354'
+        index: 4
+        slots: []

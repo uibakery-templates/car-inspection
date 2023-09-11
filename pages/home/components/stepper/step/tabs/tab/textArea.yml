@@ -3,16 +3,16 @@ definitionId: textArea
 styles:
   xl:
     gridItem:
-      x: 16
-      y: 36
-      w: 8
-      h: 37
+      x: 0
+      y: 46
+      w: 22
+      h: 29
   xs:
     gridItem:
-      x: 16
-      y: 196
-      w: 6
-      h: 31
+      x: 0
+      y: 30
+      w: 17
+      h: 37
 properties:
   name: textArea
   __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
@@ -28,7 +28,11 @@ properties:
     value: true
     dataValue: 'false'
     withData: false
-parentSlotId: '16944334845730.5185109492100672'
+  disabled:
+    value: false
+    dataValue: '{{!ui.cardPart.value}}'
+    withData: true
+parentSlotId: '16944370779670.956624142728467'
 index: 2
 actions: {}
 slots: []

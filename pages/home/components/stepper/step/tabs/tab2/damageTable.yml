@@ -1,0 +1,110 @@
+id: '16944377056290.9657186231070758'
+definitionId: smartTable
+parentSlotId: '16944370779670.10450830115104681'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 0
+      w: 24
+      h: 86
+  xs:
+    gridItem:
+      x: 0
+      y: 0
+      w: 24
+      h: 80
+properties:
+  dynamicColumns:
+    value: []
+    dataValue: |-
+      [
+        { prop: 'id', type: 'number', primaryKey: true },
+       'full_name',
+        { prop: 'avatar', type: 'image' },
+        { prop: 'email', type: 'link' },
+      ]
+    withData: false
+  data: '{{state.damage}}'
+  name: damageTable
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  title: ''
+  showLoading:
+    withData: false
+    dataValue: 'false'
+    value: false
+  showClearSelection:
+    value: false
+    dataValue: 'true'
+    withData: false
+  showExportAction:
+    value: false
+    dataValue: 'true'
+    withData: false
+  showDeleteAction:
+    value: true
+    dataValue: 'false'
+    withData: false
+actions:
+  smartTableDelete:
+    - action: '16944379455540.2607977579075478'
+      paramCode: ''
+      index: 0
+index: 0
+slots:
+  - id: '16944377056290.3120278947036501'
+    name: columns
+    children:
+      - id: '16944378851480.7993070970265759'
+        definitionId: atomicBoolean
+        parentSlotId: '16944377056290.3120278947036501'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicBoolean
+          prop: damage
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: '100'
+          filter: true
+        index: 1
+        slots: []
+      - id: '16944378851480.026326577410825225'
+        definitionId: atomicBoolean
+        parentSlotId: '16944377056290.3120278947036501'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicBoolean2
+          prop: scratches
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: '100'
+          filter: true
+        index: 2
+        slots: []
+      - id: '16944378851480.5226219930571923'
+        definitionId: atomicString
+        parentSlotId: '16944377056290.3120278947036501'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString5
+          prop: part
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: '100'
+          filter: true
+        index: 0
+        slots: []
