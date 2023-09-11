@@ -1,0 +1,29 @@
+id: '16944424811440.9073618413353601'
+definitionId: heading
+parentSlotId: '2'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 0
+      w: 9
+      h: 10
+    fontSize:
+      customValue: 28
+      customUnit: px
+  xs:
+    gridItem:
+      x: 0
+      y: 584
+      w: 24
+      h: 10
+properties:
+  name: heading
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  text: 🚗 Vehicle inspection report
+  type: h2
+actions: {}
+index: 3
+slots: []

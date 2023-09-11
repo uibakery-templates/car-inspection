@@ -12,4 +12,5 @@ index: 1
 slots:
   - id: '16944334845730.03352421334568012'
     name: content
-    children: []
+    children:
+      - interiorTable.yml

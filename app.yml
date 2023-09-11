@@ -1,9 +1,24 @@
-storeItemList: []
+storeItemList:
+  - id: '16944375784170.8104770497193086'
+    name: damage
+    value: []
+    valueType: array
+    initialValue: []
+    version: 1
+    parentPageId: '1'
 metadata:
   favicon: ''
   code: |-
     <style>
-      ub-textarea ub-base-label {
+      ub-horizontal-menu a[nbButton].active {
+        background-color: rgb(69 112 246 / 37%)!important;
+      }
+      
+      .no-shadow button {
+        filter: none!important;
+      }
+      
+       ub-textarea ub-base-label {
         display: inline!important;
       }
     </style>

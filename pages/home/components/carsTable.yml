@@ -5,8 +5,8 @@ styles:
   xl:
     gridItem:
       x: 0
-      y: 27
-      w: 12
+      y: 31
+      w: 9
       h: 128
   xs:
     gridItem:
@@ -26,7 +26,7 @@ properties:
       ]
     withData: false
   data: '{{actions.loadCars.data}}'
-  name: publicCarsTable
+  name: carsTable
   __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
     - xl
     - xs

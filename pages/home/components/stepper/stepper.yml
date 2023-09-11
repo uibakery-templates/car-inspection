@@ -4,10 +4,10 @@ parentSlotId: '2'
 styles:
   xl:
     gridItem:
-      x: 12
-      y: 10
-      w: 12
-      h: 145
+      x: 9
+      y: 13
+      w: 15
+      h: 146
   xs:
     gridItem:
       x: 0
@@ -24,11 +24,11 @@ properties:
     dataValue: 'false'
     withData: false
   allowStepSelection:
-    value: false
+    value: true
     dataValue: 'true'
     withData: false
   controlStepperManually:
-    value: true
+    value: false
     dataValue: 'false'
     withData: false
   showPrevButton:
@@ -36,17 +36,22 @@ properties:
     dataValue: 'true'
     withData: false
   showNextButton:
-    value: false
+    value: true
+    dataValue: '{{ui.stepper.selectedStepIndex < 2}}'
+    withData: true
+  linear:
+    value: true
     dataValue: 'true'
     withData: false
 actions: {}
-index: 3
+index: 6
 slots:
   - id: '16944334845730.829404967197102'
     name: steps
     children:
       - step/step.yml
-      - step2.yml
+      - step2/step2.yml
+      - step3/step3.yml
   - id: '16944334845730.637204707257955'
     name: completedStep
     children:

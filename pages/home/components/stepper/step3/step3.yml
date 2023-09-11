@@ -1,0 +1,18 @@
+id: '16944368647730.6474199878179911'
+definitionId: step
+parentSlotId: '16944334845730.829404967197102'
+styles: {}
+properties:
+  name: step3
+  title: Confirm
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+index: 2
+slots:
+  - id: '16944368647730.07124611622681098'
+    name: content
+    children:
+      - signature.yml
+      - button3.yml
+      - text3.yml

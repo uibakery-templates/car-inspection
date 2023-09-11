@@ -3,23 +3,23 @@ definitionId: button
 styles:
   xl:
     gridItem:
-      x: 17
-      y: 108
-      w: 7
+      x: 10
+      y: 75
+      w: 12
       h: 10
     iconPlacement: left
   xs:
     gridItem:
-      x: 17
-      y: 227
-      w: 4
+      x: 0
+      y: 67
+      w: 17
       h: 10
 properties:
   name: button
   __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
     - xl
     - xs
-  text: Record
+  text: Add
   icon:
     value: plus-square
     dataValue: star-outline
@@ -29,10 +29,15 @@ properties:
     dataValue: '{{!ui.cardPart.value}}'
     withData: true
   status:
-    value: primary
+    value: success-light
     dataValue: primary
-    withData: true
-parentSlotId: '16944334845730.5185109492100672'
+    withData: false
+parentSlotId: '16944370779670.956624142728467'
 index: 4
-actions: {}
+actions:
+  buttonClick:
+    - action: '16944375534980.4400075544284008'
+      paramCode: ''
+      index: 0
+  init: []
 slots: []

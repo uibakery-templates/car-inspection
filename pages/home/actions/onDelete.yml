@@ -1,0 +1,56 @@
+id: '16944379455540.2607977579075478'
+name: onDelete
+nameConfigured: true
+steps:
+  - id: '16944379484810.7898677564028445'
+    type: customAsyncCode
+    name: code
+    params:
+      - type: asyncCode
+        value: |
+          const index = {{ui.damageTable.deletedRow.index}};
+          const items = [...{{state.damage}}];
+          items.splice(0, 1);
+          return items;
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+  - id: '16944383495700.5278584314285522'
+    type: putInStore
+    name: save
+    params:
+      - type: name
+        value: '16944375784170.8104770497193086'
+        valueType: string
+      - type: value
+        value: '{{data}}'
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: producible
+        value: true
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+singleStep: true
+mode: manual
+modeConfigured: true
+parentPageId: '1'
+folder: false
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.onDelete.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.onDelete.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.onDelete.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+index: 6

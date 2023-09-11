@@ -1,0 +1,25 @@
+id: '16944370779670.18398660131060351'
+definitionId: tab
+styles: {}
+properties:
+  name: tab
+  title: Add
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  icon:
+    value: plus-circle
+    dataValue: ''
+    withData: false
+parentSlotId: '16944370779670.6855961619089905'
+index: 0
+slots:
+  - id: '16944370779670.956624142728467'
+    name: content
+    children:
+      - text.yml
+      - toggle.yml
+      - textArea.yml
+      - toggle2.yml
+      - button.yml
+      - text4.yml

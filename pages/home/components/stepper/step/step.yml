@@ -13,9 +13,5 @@ slots:
   - id: '16944334845730.5185109492100672'
     name: content
     children:
-      - text.yml
       - cardPart.yml
-      - toggle.yml
-      - textArea.yml
-      - toggle2.yml
-      - button.yml
+      - tabs/tabs.yml

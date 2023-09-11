@@ -13,4 +13,4 @@ slots:
   - id: '16944334845730.5946016110245023'
     name: content
     children:
-      - heading2.yml
+      - text2.yml

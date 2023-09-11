@@ -3,15 +3,15 @@ definitionId: booleanEdit
 styles:
   xl:
     gridItem:
-      x: 16
-      y: 20
-      w: 8
+      x: 0
+      y: 36
+      w: 22
       h: 10
   xs:
     gridItem:
-      x: 15
-      y: 176
-      w: 6
+      x: 0
+      y: 20
+      w: 19
       h: 10
 properties:
   name: toggle2
@@ -19,12 +19,16 @@ properties:
     - xl
     - xs
   label: Paint scratches
-  value: 'false'
+  value: 'true'
   status:
     value: warning
     dataValue: basic
     withData: false
-parentSlotId: '16944334845730.5185109492100672'
+  disabled:
+    value: false
+    dataValue: '{{!ui.cardPart.value}}'
+    withData: true
+parentSlotId: '16944370779670.956624142728467'
 index: 3
 actions: {}
 slots: []
