@@ -1,0 +1,17 @@
+storeItemList: []
+metadata:
+  favicon: ''
+  code: |-
+    <style>
+      ub-textarea ub-base-label {
+        display: inline!important;
+      }
+    </style>
+  title: Car inspection
+  description: ''
+appSettings:
+  properties:
+    defaultData: '{}'
+  actions: {}
+  gridVersion: 2
+internalType: project

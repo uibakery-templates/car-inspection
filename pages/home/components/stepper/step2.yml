@@ -1,0 +1,15 @@
+id: '16944334845730.12309675659957131'
+definitionId: step
+styles: {}
+properties:
+  name: step2
+  title: Interior
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+parentSlotId: '16944334845730.829404967197102'
+index: 1
+slots:
+  - id: '16944334845730.03352421334568012'
+    name: content
+    children: []

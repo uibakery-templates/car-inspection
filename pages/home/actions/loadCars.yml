@@ -1,0 +1,79 @@
+id: '16944332171400.6771680308744099'
+name: loadCars
+nameConfigured: true
+steps:
+  - id: '16944332198350.037809323574727216'
+    type: LOAD_COLLECTION
+    name: load
+    params:
+      - type: datasourceId
+        value: QALKxyGG7u
+        valueType: string
+      - type: resourceId
+        value: f49d6d33-af44-4e80-8607-d97584ece9a2
+        valueType: string
+      - type: filters
+        value:
+          - column: make_id
+            operation: '='
+            value:
+              value: '{{ui.select.value}}'
+          - column: vin
+            operation: like
+            value:
+              value: '{{ui.input.value}}'
+        valueType: custom
+      - type: ordering
+        value:
+          limit:
+            value: 1000
+          offset:
+            value: ''
+          orderBy:
+            value: ''
+          orderDirection:
+            value: asc
+        valueType: custom
+      - type: additionalParams
+        value:
+          - name: ''
+            value: ''
+        valueType: custom
+      - type: customDatabaseName
+        value: ''
+        valueType: interpolatedValue
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+singleStep: false
+mode: manual
+modeConfigured: false
+parentPageId: '1'
+folder: false
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.loadCars.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.loadCars.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.loadCars.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+assigned: false
+selected: true
+configured: true
+index: 0

@@ -1,0 +1,173 @@
+id: '16944332133320.7242921028058678'
+definitionId: smartTable
+parentSlotId: '2'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 27
+      w: 12
+      h: 128
+  xs:
+    gridItem:
+      x: 0
+      y: 280
+      w: 24
+      h: 80
+properties:
+  dynamicColumns:
+    value: []
+    dataValue: |-
+      [
+        { prop: 'id', type: 'number', primaryKey: true },
+       'full_name',
+        { prop: 'avatar', type: 'image' },
+        { prop: 'email', type: 'link' },
+      ]
+    withData: false
+  data: '{{actions.loadCars.data}}'
+  name: publicCarsTable
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  title: Cars
+  showLoading:
+    withData: true
+    dataValue: '{{actions.loadCars.loading}}'
+    value: false
+  rowVariation: dense
+  limit: '12'
+  showClearSelection:
+    value: false
+    dataValue: 'true'
+    withData: false
+actions: {}
+index: 1
+slots:
+  - id: '16944332133320.040130147227002144'
+    name: columns
+    children:
+      - id: '16944332306000.7624379707562188'
+        definitionId: atomicNumber
+        parentSlotId: '16944332133320.040130147227002144'
+        styles:
+          xl:
+            visible: false
+        properties:
+          name: atomicNumber
+          prop: id
+          primaryKey: true
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 60
+          filter: true
+        index: 0
+        slots: []
+      - id: '16944332306000.5827724465702824'
+        definitionId: atomicString
+        parentSlotId: '16944332133320.040130147227002144'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString2
+          prop: model
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: 120
+          filter: true
+        index: 3
+        slots: []
+      - id: '16944332306000.33536644338487287'
+        definitionId: atomicString
+        parentSlotId: '16944332133320.040130147227002144'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString3
+          prop: vin
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          width: '150'
+          filter: true
+        index: 4
+        slots: []
+      - id: '16944332306010.17966297849336943'
+        definitionId: atomicImage
+        parentSlotId: '16944332133320.040130147227002144'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicImage
+          prop: image_thumb
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          primaryKey: false
+          width: '60'
+          title: Image
+        index: 1
+        slots: []
+      - id: '16944332306000.8031622170411297'
+        definitionId: atomicSelect
+        parentSlotId: '16944332133320.040130147227002144'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicSelect
+          prop: make_id
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          primaryKey: false
+          filter: true
+          width: '80'
+          options:
+            value:
+              - value: Dodge
+                color: primary
+                __UIBAKERY__SYSTEM_ID__: '16944333734850.22853408614464832'
+              - value: Lincoln
+                color: success
+                __UIBAKERY__SYSTEM_ID__: '16944333734860.1259570263333778'
+              - value: Pontiac
+                color: warning
+                __UIBAKERY__SYSTEM_ID__: '16944333734860.9252078488460371'
+              - value: Ford
+                color: danger
+                __UIBAKERY__SYSTEM_ID__: '16944333734860.8065893662134271'
+              - value: Mercedes-Benz
+                color: info
+                __UIBAKERY__SYSTEM_ID__: '16944333734860.34294622644219697'
+              - value: Toyota
+                color: basic
+                __UIBAKERY__SYSTEM_ID__: '16944333734860.37748372232726846'
+              - value: Mercury
+                color: primary-light
+                __UIBAKERY__SYSTEM_ID__: '16944333734860.41299883966671325'
+              - value: Hummer
+                color: success-light
+                __UIBAKERY__SYSTEM_ID__: '16944333734860.5936744952987771'
+              - value: Lexus
+                color: warning-light
+                __UIBAKERY__SYSTEM_ID__: '16944333734860.7253527976308762'
+              - value: Nissan
+                color: danger-light
+                __UIBAKERY__SYSTEM_ID__: '16944333734860.7425363736065236'
+            dataValue: '{{actions.loadMakes.data}}'
+            withData: true
+          appearance:
+            value: outline
+            dataValue: outline
+            withData: false
+            themeDefaultOverridePropertyKey: atomicSelectAppearance
+        index: 2
+        slots: []

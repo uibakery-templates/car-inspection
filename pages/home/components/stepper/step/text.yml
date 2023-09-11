@@ -1,0 +1,35 @@
+id: '16944334845730.47396834104035146'
+definitionId: text
+styles:
+  xl:
+    gridItem:
+      x: 16
+      y: 0
+      w: 8
+      h: 10
+    fontSize:
+      customValue: 16
+      customUnit: px
+      themeDefaultOverridePropertyKey: baseTextFontSize
+  xs:
+    gridItem:
+      x: 16
+      y: 157
+      w: 6
+      h: 19
+properties:
+  name: text
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  value: '{{ui.cardPart.value || ''No area selected''}}'
+  alignment: center
+  textStyle:
+    transform: none
+    styles:
+      - bold
+  decoration: null
+parentSlotId: '16944334845730.5185109492100672'
+index: 0
+actions: {}
+slots: []

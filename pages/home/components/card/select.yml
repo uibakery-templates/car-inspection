@@ -1,0 +1,66 @@
+id: '16944334525780.3731986833248653'
+definitionId: selectWithAtomics
+parentSlotId: '16944334591530.571627568071615'
+styles:
+  xl:
+    gridItem:
+      x: 11
+      y: 0
+      w: 10
+      h: 10
+  xs:
+    gridItem:
+      x: 14
+      y: 10
+      w: 10
+      h: 10
+properties:
+  options:
+    value:
+      - value: option_1
+        title: ''
+        __UIBAKERY__SYSTEM_ID__: '1'
+      - value: option_2
+        title: ''
+        __UIBAKERY__SYSTEM_ID__: '2'
+    dataValue: '{{actions.loadMakes.data}}'
+    withData: true
+  name: select
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  optionValueKey: value
+  labelWidth: 0
+  labelConfig:
+    text: Make
+    position: horizontal
+    align: left
+actions:
+  selectChange:
+    - action: '16944332171400.6771680308744099'
+      paramCode: ''
+      blockPageLoad: false
+      index: 0
+  init: []
+  focusEvent: []
+  blurEvent: []
+index: 4
+slots:
+  - id: '16944334525780.8944791261110245'
+    name: optionViewTypes
+    children:
+      - id: '16944342951480.26671015422797173'
+        definitionId: atomicString
+        parentSlotId: '16944334525780.8944791261110245'
+        styles:
+          xl:
+            visible: true
+        properties:
+          name: atomicString
+          prop: label
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        index: 0
+        slots: []

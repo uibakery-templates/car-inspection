@@ -1,0 +1,34 @@
+id: '16944334845730.48081211599184903'
+definitionId: textArea
+styles:
+  xl:
+    gridItem:
+      x: 16
+      y: 36
+      w: 8
+      h: 37
+  xs:
+    gridItem:
+      x: 16
+      y: 196
+      w: 6
+      h: 31
+properties:
+  name: textArea
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  labelConfig:
+    text: ''
+    position: vertical
+    align: left
+  placeholder: Add details
+  __UIBAKERY__SHOW__CONDITION__CODE__: ''
+  __UIBAKERY__SHOW__CONDITION__PRESERVE__:
+    value: true
+    dataValue: 'false'
+    withData: false
+parentSlotId: '16944334845730.5185109492100672'
+index: 2
+actions: {}
+slots: []

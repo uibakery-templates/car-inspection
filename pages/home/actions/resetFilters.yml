@@ -1,0 +1,65 @@
+id: '16944347255100.4118766593333989'
+name: resetFilters
+nameConfigured: true
+steps:
+  - id: '16944347282590.4854337199366785'
+    type: customAsyncCode
+    name: code
+    params:
+      - type: asyncCode
+        value: |-
+          ui.select.setValue(null);
+          ui.input.setValue('');
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+  - id: '16944347580620.21683750739233254'
+    type: executeAction
+    name: execute
+    params:
+      - type: action
+        value: '16944332171400.6771680308744099'
+        valueType: string
+      - type: isActionsLibraryCall
+        value: false
+        valueType: string
+      - type: customParams
+        value: return {{data}};
+        valueType: string
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+singleStep: true
+mode: manual
+modeConfigured: true
+parentPageId: '1'
+folder: false
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.resetFilters.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.resetFilters.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.resetFilters.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+assigned: true
+selected: true
+configured: true
+index: 2

@@ -1,0 +1,30 @@
+id: '16944334845730.08432832760410602'
+definitionId: booleanEdit
+styles:
+  xl:
+    gridItem:
+      x: 16
+      y: 20
+      w: 8
+      h: 10
+  xs:
+    gridItem:
+      x: 15
+      y: 176
+      w: 6
+      h: 10
+properties:
+  name: toggle2
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  label: Paint scratches
+  value: 'false'
+  status:
+    value: warning
+    dataValue: basic
+    withData: false
+parentSlotId: '16944334845730.5185109492100672'
+index: 3
+actions: {}
+slots: []

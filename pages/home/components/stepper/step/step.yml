@@ -1,0 +1,21 @@
+id: '16944334845730.9553014823463759'
+definitionId: step
+styles: {}
+properties:
+  name: step
+  title: Exterior
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+parentSlotId: '16944334845730.829404967197102'
+index: 0
+slots:
+  - id: '16944334845730.5185109492100672'
+    name: content
+    children:
+      - text.yml
+      - cardPart.yml
+      - toggle.yml
+      - textArea.yml
+      - toggle2.yml
+      - button.yml

@@ -1,0 +1,22 @@
+id: '16944334845730.6418748309719315'
+definitionId: heading
+styles:
+  xl:
+    fontSize:
+      customValue: 15
+      customUnit: px
+      themeDefaultOverridePropertyKey: baseTextFontSize
+    gridItem:
+      h: 10
+      w: 24
+properties:
+  name: heading2
+  text: Wizard completed!
+  verticalAlignment: middle
+  alignment: center
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+parentSlotId: '16944334845730.5946016110245023'
+index: 0
+slots: []

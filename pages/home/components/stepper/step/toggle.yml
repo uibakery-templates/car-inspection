@@ -1,0 +1,30 @@
+id: '16944334845730.7491772848350786'
+definitionId: booleanEdit
+styles:
+  xl:
+    gridItem:
+      x: 16
+      y: 10
+      w: 8
+      h: 10
+  xs:
+    gridItem:
+      x: 16
+      y: 147
+      w: 6
+      h: 10
+properties:
+  name: toggle
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  label: Area is damanged
+  value: 'false'
+  status:
+    value: danger
+    dataValue: basic
+    withData: false
+parentSlotId: '16944334845730.5185109492100672'
+index: 1
+actions: {}
+slots: []
