@@ -51,9 +51,27 @@ steps:
     level: 0
     fallthroughError: false
     isChanged: false
+  - id: '16944450943370.27717387173493746'
+    type: customAsyncCode
+    name: shortNames
+    params:
+      - type: asyncCode
+        value: |-
+          return {{data}}.map(item => {
+            if (item.make_id === 'Mercedes-Benz') {
+              item.make_id = 'Mercedes';
+            }
+            return item;
+          });
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
   - id: '16944339289570.7388453566677275'
     type: customAsyncCode
-    name: code
+    name: addColor
     params:
       - type: asyncCode
         value: |-
@@ -88,6 +106,7 @@ steps:
     level: 0
     fallthroughError: false
     isChanged: true
+    nameConfigured: true
 singleStep: false
 mode: manual
 modeConfigured: false

@@ -36,6 +36,21 @@ steps:
     level: 0
     fallthroughError: false
     isChanged: true
+  - id: '16944451388400.8898934644372685'
+    type: customAsyncCode
+    name: reset
+    params:
+      - type: asyncCode
+        value: |-
+          {{ui.toggle.setValue(true)}}
+          {{ui.toggle2.setValue(true)}}
+          {{ui.textArea.setValue('')}}
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    nameConfigured: true
   - id: '16944436649210.0189141044173462'
     type: showToast
     name: notification

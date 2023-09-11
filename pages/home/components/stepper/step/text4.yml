@@ -30,6 +30,10 @@ properties:
   __UIBAKERY__SHOW__CONDITION__CODE__: '{{!ui.cardPart.value}}'
   value: ℹ️ Start by selecting an area on the vehicle map.
   alignment: center
+  __UIBAKERY__SHOW__CONDITION__PRESERVE__:
+    value: true
+    dataValue: 'false'
+    withData: false
 actions: {}
 index: 5
 slots: []
