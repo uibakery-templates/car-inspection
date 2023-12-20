@@ -7,7 +7,7 @@ styles:
       x: 0
       y: 14
       w: 9
-      h: 132
+      h: 115
   xs:
     gridItem:
       x: 0
@@ -36,7 +36,7 @@ properties:
     dataValue: '{{actions.loadCars.loading}}'
     value: false
   rowVariation: dense
-  limit: '13'
+  limit: '11'
   showClearSelection:
     value: false
     dataValue: 'true'
