@@ -20,6 +20,7 @@ properties:
     - xl
     - xs
   showHeader: false
+  heightMode: auto
 actions: {}
 index: 8
 slots:

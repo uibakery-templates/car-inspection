@@ -1,0 +1,17 @@
+return [
+  { part: 'Seats', isWorking: true },
+  { part: 'Dashboard', isWorking: true },
+  { part: 'Floor Mats', isWorking: true },
+  { part: 'Windows', isWorking: true },
+  { part: 'Rearview Mirror', isWorking: true },
+  { part: 'Steering Wheel', isWorking: true },
+  { part: 'Gear Shift', isWorking: true },
+  { part: 'Cup Holders', isWorking: true },
+  { part: 'Air Vents', isWorking: true },
+  { part: 'Radio', isWorking: true },
+  { part: 'Glove Box', isWorking: true },
+  { part: 'Door Handles', isWorking: true },
+  { part: 'Sun Visors', isWorking: true },
+  { part: 'Seat Belts', isWorking: true },
+  { part: 'Center Console', isWorking: true },
+];

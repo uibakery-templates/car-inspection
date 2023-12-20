@@ -10,7 +10,7 @@ metadata:
   favicon: ''
   code: |-
     <style>
-      ub-horizontal-menu a[nbButton].active {
+      ub-horizontal-menu a[nbButton].active, ub-horizontal-menu a[nbButton]:hover {
         background-color: rgb(69 112 246 / 37%)!important;
       }
       
@@ -24,9 +24,11 @@ metadata:
     </style>
   title: Car inspection
   description: ''
+  breakpoints: []
 appSettings:
   properties:
     defaultData: '{}'
   actions: {}
   gridVersion: 2
+  density: compact
 internalType: project

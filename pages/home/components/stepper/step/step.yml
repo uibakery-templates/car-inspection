@@ -15,4 +15,3 @@ slots:
     children:
       - cardPart.yml
       - tabs/tabs.yml
-      - text4.yml

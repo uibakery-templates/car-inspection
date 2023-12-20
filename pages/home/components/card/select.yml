@@ -7,7 +7,7 @@ styles:
       x: 11
       y: 0
       w: 10
-      h: 10
+      h: 9
   xs:
     gridItem:
       x: 14
@@ -35,6 +35,14 @@ properties:
     text: Make
     position: horizontal
     align: left
+  allowSelectAll:
+    value: false
+    dataValue: 'false'
+    withData: false
+  allowResetValue:
+    value: false
+    dataValue: 'false'
+    withData: false
 actions:
   selectChange:
     - action: '16944332171400.6771680308744099'

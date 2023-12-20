@@ -1,24 +1,41 @@
-id: '16944427943090.6623945135281242'
-name: complete
+id: '16944375534980.4400075544284008'
+name: addDamage
 nameConfigured: true
 steps:
-  - id: '16944427965640.4601283700563923'
+  - id: '16944375581040.1109610205236593'
     type: customAsyncCode
     name: code
     params:
       - type: asyncCode
-        value: '{{ui.stepper.next()}};'
+        value: ./code.js
         valueType: interpolatedValue
         interpolationType: code
     level: 0
     fallthroughError: false
     isChanged: true
-  - id: '16944428469490.1363158993304756'
+  - id: '16944376466200.3139625534040038'
+    type: putInStore
+    name: save
+    params:
+      - type: name
+        value: '16944375784170.8104770497193086'
+        valueType: string
+      - type: value
+        value: return [...{{state.damage}}, {{data}}];
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: producible
+        value: true
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+  - id: '16944436649210.0189141044173462'
     type: showToast
     name: notification
     params:
       - type: message
-        value: Report successfully submitted!
+        value: Damage recorded!
         valueType: interpolatedValue
       - type: type
         value: success
@@ -27,7 +44,7 @@ steps:
         value: checkmark-circle-2
         valueType: string
       - type: duration
-        value: '5000'
+        value: '3000'
         valueType: interpolatedValue
       - type: position
         value: top-end
@@ -38,27 +55,25 @@ steps:
     level: 0
     fallthroughError: false
     isChanged: true
-singleStep: false
+singleStep: true
 mode: manual
-modeConfigured: false
+modeConfigured: true
 parentPageId: '1'
-folder: false
-parentId: null
 config:
   shouldConfirm: false
-  confirmMessage: Are you sure you'd like to proceed with "{{actions.complete.name}}"?
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.addDamage.name}}"?
   showSuccessToast: false
-  successToast: Action "{{actions.complete.name}}" successfully executed
+  successToast: Action "{{actions.addDamage.name}}" successfully executed
   successToastDuration: '3000'
   successToastHideByClick: false
   showErrorToast: true
-  errorToast: Action "{{actions.complete.name}}" has failed
+  errorToast: Action "{{actions.addDamage.name}}" has failed
   errorToastDuration: '3000'
   errorToastHideByClick: false
   delay: '0'
   runWhenFirstReferenced: true
   preserveStateOnPageChange: false
-assigned: false
+assigned: true
 selected: true
 configured: true
-index: 8
+kind: workflow

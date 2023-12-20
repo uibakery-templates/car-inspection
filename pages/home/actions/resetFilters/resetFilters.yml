@@ -7,9 +7,7 @@ steps:
     name: code
     params:
       - type: asyncCode
-        value: |-
-          ui.select.setValue(null);
-          ui.input.setValue('');
+        value: ./code.js
         valueType: interpolatedValue
         interpolationType: code
     level: 0
@@ -26,7 +24,7 @@ steps:
         value: false
         valueType: string
       - type: customParams
-        value: return {{data}};
+        value: ./execute-customParams.js
         valueType: string
       - type: successMapper
         value: ''
@@ -44,7 +42,6 @@ singleStep: true
 mode: manual
 modeConfigured: true
 parentPageId: '1'
-folder: false
 config:
   shouldConfirm: false
   confirmMessage: Are you sure you'd like to proceed with "{{actions.resetFilters.name}}"?
@@ -62,4 +59,4 @@ config:
 assigned: true
 selected: true
 configured: true
-index: 3
+kind: workflow

@@ -7,11 +7,7 @@ steps:
     name: code
     params:
       - type: asyncCode
-        value: |
-          const index = {{ui.damageTable.deletedRow.index}};
-          const items = [...{{state.damage}}];
-          items.splice(0, 1);
-          return items;
+        value: ./code.js
         valueType: interpolatedValue
         interpolationType: code
     level: 0
@@ -38,7 +34,6 @@ singleStep: true
 mode: manual
 modeConfigured: true
 parentPageId: '1'
-folder: false
 config:
   shouldConfirm: false
   confirmMessage: Are you sure you'd like to proceed with "{{actions.onDelete.name}}"?
@@ -53,4 +48,4 @@ config:
   delay: '0'
   runWhenFirstReferenced: true
   preserveStateOnPageChange: false
-index: 6
+kind: workflow

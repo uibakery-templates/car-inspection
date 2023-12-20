@@ -51,67 +51,21 @@ steps:
     level: 0
     fallthroughError: false
     isChanged: false
-  - id: '16944450943370.27717387173493746'
-    type: customAsyncCode
-    name: shortNames
-    params:
-      - type: asyncCode
-        value: |-
-          return {{data}}.map(item => {
-            if (item.make_id === 'Mercedes-Benz') {
-              item.make_id = 'Mercedes';
-            }
-            return item;
-          });
-        valueType: interpolatedValue
-        interpolationType: code
-    level: 0
-    fallthroughError: false
-    isChanged: true
-    nameConfigured: true
   - id: '16944339289570.7388453566677275'
     type: customAsyncCode
-    name: addColor
+    name: code
     params:
       - type: asyncCode
-        value: |-
-          const colors = [
-            'primary', 'success', 'info', 'warning', 'danger', 'basic', 
-            'primary-light', 'success-light', 'info-light', 'warning-light', 'danger-light', 
-            'primary-dark', 'success-dark', 'info-dark', 'warning-dark', 'danger-dark'
-          ];
-
-          let uniqueMakes = {{data}}.reduce((unique, car, index) => {
-            const isDuplicate = unique.some(item => item.label === car.make_id);
-            if (!isDuplicate) {
-              unique.push({
-                label: car.make_id,
-                value: car.make_id,
-                color: colors[index % colors.length], // assign a color from the array
-              });
-            }
-            return unique;
-          }, []);
-
-          // Add an option with null value
-          uniqueMakes.unshift({
-            label: 'Any make',
-            value: null,
-            color: 'basic', // assign any color you like
-          });
-
-          return uniqueMakes;
+        value: ./code.js
         valueType: interpolatedValue
         interpolationType: code
     level: 0
     fallthroughError: false
     isChanged: true
-    nameConfigured: true
 singleStep: false
 mode: manual
 modeConfigured: false
 parentPageId: '1'
-folder: false
 parentId: null
 config:
   shouldConfirm: false
@@ -130,4 +84,4 @@ config:
 assigned: false
 selected: true
 configured: true
-index: 2
+kind: workflow
