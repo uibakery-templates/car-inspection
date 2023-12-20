@@ -6,9 +6,9 @@ styles:
       x: 0
       y: 0
       w: 22
-      h: 9
+      h: 6
     fontSize:
-      customValue: 16
+      customValue: 12
       customUnit: px
       themeDefaultOverridePropertyKey: baseTextFontSize
   xs:

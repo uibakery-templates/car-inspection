@@ -5,11 +5,11 @@ styles:
   xl:
     gridItem:
       x: 0
-      y: 9
+      y: 6
       w: 24
-      h: 13
+      h: 6
     fontSize:
-      customValue: 16
+      customValue: 12
       customUnit: px
       themeDefaultOverridePropertyKey: baseTextFontSize
     color:
@@ -29,7 +29,7 @@ properties:
     - xs
   __UIBAKERY__SHOW__CONDITION__CODE__: '{{!ui.cardPart.value}}'
   value: ℹ️ Start by selecting an area on the vehicle map.
-  alignment: center
+  alignment: left
 actions: {}
 index: 5
 slots: []

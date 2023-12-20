@@ -4,8 +4,8 @@ styles:
   xl:
     gridItem:
       x: 0
-      y: 31
-      w: 22
+      y: 21
+      w: 24
       h: 9
   xs:
     gridItem:
