@@ -1,35 +1,38 @@
-id: '16944368130390.9041434340226597'
-name: onClick
+id: '16944428734830.5635124623168917'
+name: loadHistory
 nameConfigured: true
 steps:
-  - id: '16944368164170.9949388128719343'
+  - id: '16944428755370.262999715175247'
     type: customAsyncCode
     name: code
     params:
       - type: asyncCode
-        value: '{{ui.stepper.next()}}'
+        value: ./code.js
         valueType: interpolatedValue
         interpolationType: code
     level: 0
     fallthroughError: false
     isChanged: true
-singleStep: true
+singleStep: false
 mode: manual
-modeConfigured: true
+modeConfigured: false
 parentPageId: '1'
-folder: false
+parentId: null
 config:
   shouldConfirm: false
-  confirmMessage: Are you sure you'd like to proceed with "{{actions.onClick.name}}"?
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.loadHistory.name}}"?
   showSuccessToast: false
-  successToast: Action "{{actions.onClick.name}}" successfully executed
+  successToast: Action "{{actions.loadHistory.name}}" successfully executed
   successToastDuration: '3000'
   successToastHideByClick: false
   showErrorToast: true
-  errorToast: Action "{{actions.onClick.name}}" has failed
+  errorToast: Action "{{actions.loadHistory.name}}" has failed
   errorToastDuration: '3000'
   errorToastHideByClick: false
   delay: '0'
   runWhenFirstReferenced: true
   preserveStateOnPageChange: false
-index: 4
+assigned: false
+selected: true
+configured: true
+kind: workflow

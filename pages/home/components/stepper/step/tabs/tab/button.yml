@@ -4,7 +4,7 @@ styles:
   xl:
     gridItem:
       x: 10
-      y: 75
+      y: 69
       w: 12
       h: 10
     iconPlacement: left

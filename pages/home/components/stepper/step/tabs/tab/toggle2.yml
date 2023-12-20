@@ -4,9 +4,9 @@ styles:
   xl:
     gridItem:
       x: 0
-      y: 36
+      y: 31
       w: 22
-      h: 10
+      h: 9
   xs:
     gridItem:
       x: 0

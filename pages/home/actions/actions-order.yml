@@ -1,0 +1,9 @@
+- loadCars
+- loadMakes
+- resetFilters
+- onClick
+- addDamage
+- onDelete
+- loadInterior
+- complete
+- loadHistory

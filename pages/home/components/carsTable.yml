@@ -5,9 +5,9 @@ styles:
   xl:
     gridItem:
       x: 0
-      y: 31
+      y: 14
       w: 9
-      h: 128
+      h: 132
   xs:
     gridItem:
       x: 0
@@ -36,7 +36,7 @@ properties:
     dataValue: '{{actions.loadCars.loading}}'
     value: false
   rowVariation: dense
-  limit: '12'
+  limit: '13'
   showClearSelection:
     value: false
     dataValue: 'true'
@@ -169,5 +169,9 @@ slots:
             dataValue: outline
             withData: false
             themeDefaultOverridePropertyKey: atomicSelectAppearance
+          allowResetValue:
+            value: false
+            dataValue: 'false'
+            withData: false
         index: 2
         slots: []
